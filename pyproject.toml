@@ -1,0 +1,31 @@
+[project]
+name = "wordnet-mcp-server"
+version = "0.1.0"
+description = "WordNet词汇查询的MCP服务"
+authors = [
+    {name = "keepondream"}
+]
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+dependencies = [
+    "mcp[cli]",
+    "nltk",
+    "httpx",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff",
+    "pytest",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.mcp]
+module = "app"
+
+[project.scripts]
+wordnet-mcp = "app:main" 
