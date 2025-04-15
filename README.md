@@ -68,8 +68,9 @@ python -m wordnet_mcp_server
 {
   "mcpServers": {
     "wordnet": {
-      "command": "uvx",
-      "args": ["wordnet-mcp-server"]
+      "command": "python3",
+      "type": "stdio",
+      "args": ["-m", "wordnet_mcp_server"]
     }
   }
 }
@@ -83,9 +84,7 @@ python -m wordnet_mcp_server
     "WordNet MCP": {
       "command": "python3",
       "type": "stdio",
-      "args": [
-        "{$HOME}/wordnet-mcp-server/app.py"
-      ]
+      "args": ["-m", "wordnet_mcp_server"]
     }
   }
 }
@@ -164,7 +163,7 @@ _[LLM调用get_hypernyms和get_hyponyms工具]_
 
 "dog"的下位概念包括：
 - puppy
-- pooch
+- pooch`
 - hound
 - poodle
 - terrier
