@@ -1,6 +1,7 @@
 # WordNet MCP 服务
 
 这是一个基于WordNet的Model Context Protocol (MCP) 服务实现，提供词汇查询功能，包括同义词、反义词、上下位词和定义等。
+[![WordNet MCP server](https://mcprush.com/badge/wordnet-mcp/card.svg)](https://mcprush.com/to/wordnet-mcp?ref=badge)
 
 ## 项目地址
 
